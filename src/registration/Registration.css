@@ -286,7 +286,7 @@
         font-size: 14px;
     }
 }
-@media screen and (width <= 450px) {
+@media screen and (width <= 575px) {
     .Registration-Container{
         font-size: 12px;
     }
