@@ -140,7 +140,7 @@ const Registration = () => {
                     <p>Agree to terms and conditions</p>
                 </div>
             </div>
-            <button type="submit" disabled={agree} style={agree?{}:{backgroundColor: "#7bf8d2"}}>{loading === true? "Paying...": "Pay"}</button>
+            <button type="submit" disabled={agree=== true? false: true} style={agree?{}:{backgroundColor: "#7bf8d2"}}>{loading === true? "Paying...": "Pay"}</button>
         </form>
     </div>
   )
