@@ -290,6 +290,9 @@
     .Registration-Container{
         font-size: 12px;
     }
+    .Registration-Form{
+        width: 70%;
+    }
     .Registration-Payment{
             & .Registration-Eight{
                 flex-direction: column;
@@ -352,7 +355,9 @@
 
         & div{
             flex-direction: column;
-
+            & input {
+                width: 100%;
+            }
         }
     }
     .Registration-Two{
@@ -361,6 +366,10 @@
         & div{
             flex-direction: column;
             align-items: flex-start;
+
+            & input {
+                width: 100%;
+            }
         }
     }
     .Registration-One{
@@ -368,6 +377,10 @@
 
         & div{
             flex-direction: column;
+
+            & input {
+                width: 100%;
+            }
 
         }
     }
