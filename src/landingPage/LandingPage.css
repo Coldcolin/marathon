@@ -3,16 +3,11 @@
     height: max-content;
     width: 100%;
     background: rgba(255, 255, 255, 1);
-
-    & a{
-        text-decoration: none;
-        color: inherit;
-    }
 }
 
 .landing_hero {
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     background-image:
         linear-gradient(to left, rgba(232, 244, 247, 0.5), rgba(44, 27, 30, 0.75)), url('../assets/image1.png');
     background-size: cover;
@@ -24,10 +19,11 @@
 
 .landing_hero_wrapper {
     width: 90%;
-    height: 70%;
+    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: 50px 0px;
 }
 
 .landing_hero_wrapper_h2 {
@@ -35,14 +31,14 @@
     color: rgba(23, 183, 136, 1);
     line-height: 48px;
     font-weight: 800;
-    width: 58%;
+    /* width: 58%; */
 }
 
 .landing_hero_wrapper_h1 {
     font-size: 60px;
     font-weight: 800;
     line-height: 90px;
-    width: 58%;
+    /* width: 58%; */
     color: rgba(255, 255, 255, 1);
 }
 
@@ -51,12 +47,12 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
-    width: 45%;
+    width: 60%;
 }
 
 .landing_hero_btn_holder {
     width: 30%;
-    height: 20%;
+    height: 16vh;
     display: flex;
     align-items: center;
 }
@@ -110,7 +106,7 @@
 
 .landing_ready_card {
     width: 28%;
-    height: 80vh;
+    height: 70vh;
 }
 
 .landing_ready_card_img_holder {
@@ -125,17 +121,18 @@
 
 .landing_ready_card_holder {
     width: 100%;
-    height: 30%;
+    /* height: 30%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .landing_ready_card_A {
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    width: 75%;
+    /* width: 75%; */
     color: #ffff;
 }
 
@@ -190,31 +187,31 @@
 }
 
 .landing_category_card {
-    width: 22%;
-    height: 50vh;
+    width: 24%;
+    min-height: 75vh;
     background: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     box-shadow: 0 4px 4px 0 rgba(124, 124, 124, 0.25);
     border-radius: 10px;
     margin: 30px 0;
+    gap: 20px;
 
 }
 
 
 .landing_category_card_currency_div {
-    width: 22%;
-    height: 18%;
+    width: 20%;
+    height: 8.4vh;
     background: rgba(217, 217, 217, 0.4);
-    /* background: green; */
     font-size: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgba(89, 84, 84, 1);
+    margin-top: 20px;
 }
 
 .landing_category_card_h2 {
@@ -227,7 +224,11 @@
 }
 
 .landing_category_card ul {
-    width: 60%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
 }
 
 .landing_category_card ul li {
@@ -315,7 +316,6 @@
 .landing_road_map {
     width: 100%;
     height: 70vh;
-    /* background: green; */
 }
 
 .landing_road_map_title {
@@ -343,7 +343,7 @@
 
 .landing_meet_sponsor {
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,19 +355,26 @@
     font-size: 48px;
     line-height: 72px;
     color: rgba(89, 84, 84, 1);
+    margin: 40px 0px;
 }
 
 .landing_meet_sponsor_logo_div {
-    width: 35%;
-    height: 40%;
+    width: 90%;
+    /* height: 40%; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 20px 0px 60px 0px;
 }
 
-.landing_meet_sponsor_logo_div img {
-    height: 60%;
-    width: 30%;
+.landing_meet_sponsor_logo_div_img {
+    /* height: 22vh; */
+    width: 19%;
+}
+
+.landing_meet_sponsor_logo2{
+    width: 19%;
 }
 
 .landing_news {
@@ -426,7 +433,7 @@
 }
 
 .landing_news_article_header {
-    width: 85%;
+    /* width: 85%; */
     height: 20%;
     display: flex;
     align-items: center;
@@ -437,6 +444,7 @@
     font-weight: 700;
     font-size: 18px;
     color: rgba(89, 84, 84, 1);
+    text-align: center;
 }
 
 .landing_news_article_header_span {
@@ -450,6 +458,7 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba(38, 38, 38, 1);
+    overflow: auto;
 }
 
 .landing_news_article_btn {
@@ -467,6 +476,8 @@
     line-height: 16.41px;
     color: rgba(118, 191, 208, 1);
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .landing_news_view_more_btn {
@@ -523,7 +534,7 @@
 } */
 
 .landing_become_a_sponsor_wrapper_1 {
-    width: 30%;
+    width: 100%;
     height: 25%;
     display: flex;
     flex-direction: column;
@@ -543,6 +554,7 @@
     font-size: 20px;
     line-height: 30px;
     color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
 
 .landing_become_a_sponsor_wrapper_2 {
@@ -569,8 +581,8 @@
 }
 
 .landing_become_a_sponsor_wrapper_2_button {
-    width: 35%;
-    height: 39%;
+    width: 177px;
+    height: 57px;
     background: rgba(23, 183, 136, 1);
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
