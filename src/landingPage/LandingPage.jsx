@@ -168,7 +168,7 @@ const LandingPage = () => {
                         <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH <br /> MARATHON, 2024”</h1>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
-                            <button className='landing_hero_btn'><Link to="/register">Register now</Link></button>
+                            <Link to="/register"><button className='landing_hero_btn'>Register now</button></Link>
                         </div>
                     </div>
                 </div>
