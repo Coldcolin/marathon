@@ -10,10 +10,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const Blog = () => {
   const location = useLocation();
   const { img, H4, Span, content } = location.state || {};
-  console.log(img)
-  // if (!img || !H4 || !Span || !content) {
-  //   return <div>No blog post selected.</div>;
-  // }
 
   const BlogCard = (props) => {
     return (
@@ -79,7 +75,7 @@ const Blog = () => {
             </div>
             <div className='blog_landing_write_holder_Div'>
               <h3 className='blog_landing_write_holder_H3'>How to Register</h3>
-              <p className='blog_landing_write_holder_P'>If you are interested in volunteering for the Ajegunle City Youth Marathon, 2024 event, simply fill out the online registration form <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth</a> , submission closes by July 28th, 2024.
+              <p className='blog_landing_write_holder_P'>If you are interested in volunteering for the Ajegunle City Youth Marathon, 2024 event, simply fill out the online registration form <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024</a> , submission closes by July 28th, 2024.
                 Space is limited, so don't miss this chance to be part of an inspiring and rewarding experience. Join us in shaping a healthier and more active community for our youth!
               </p>
               <p className='blog_landing_write_holder_P'>For any inquiries or assistance with registration, please contact: Amudalat Temitope Oloola:
@@ -128,7 +124,7 @@ const Blog = () => {
               This is a great milestone recorded in our planning process to ensure successful implementation outcomes of the event; aimed to become the largest Youth Engagement Platform in the annals of the NYCN-AJIF Local Branch, to drive social transformation and positive change among youths and advocacy for good governance in Ajeromi-Ifelodun LGA at large.
             </p>
             <p className='blog_landing_write_holder_p'>
-              To join our Volunteer Youth Force simply fill out the online registration form: <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth</a> , submission closes by July 28th, 2024.
+              To join our Volunteer Youth Force simply fill out the online registration form: <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2025">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024</a> , submission closes by July 28th, 2024.
             </p>
             <p className='blog_landing_write_holder_p'>
               It Can Only Get Better!
