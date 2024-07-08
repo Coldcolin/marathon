@@ -6,6 +6,7 @@ import image3 from '../assets/image3.png'
 import image4 from '../assets/readyNew.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'
 import map from '../assets/ajegunleMap.png'
+import Slider from "react-slick";
 // import curve from '../assets/theCurve.png'
 // import ajegunle from '../assets/ajegunleHub.png'
 // import newsImage1 from '../assets/newsImage1.png'
@@ -159,6 +160,59 @@ const LandingPage = () => {
         )
     }
 
+        const firstSettings = {
+            dots: false,
+            infinite: true,
+            speed: 2200,
+            // slidesToShow: 3.25,
+            // slidesToScroll: 1,
+            // initialSlide: 0,
+            // autoplay: true,
+            // pauseOnHover: true,
+            // autoplaySpeed: 10000,
+            // cssEase: "linear",
+            // nextArrow: <SampleNextArrow />,
+            // prevArrow: <SampleNextArrow />,
+            // responsive: [
+            // {
+            //     breakpoint: 1024,
+            //     settings: {
+            //     slidesToShow: 2.5,
+            //     slidesToScroll: 1.5,
+            //     infinite: true,
+            //     dots: false
+            //     }
+            // },
+            // {
+            //     breakpoint: 768,
+            //     settings: {
+            //     slidesToShow: 1.5,
+            //     slidesToScroll: 1.5,
+            //     infinite: true,
+            //     dots: false
+            //     }
+            // },
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     infinite: true,
+            //     dots: false
+            //     }
+            // },
+            // {
+            //     breakpoint: 425,
+            //     settings: {
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     nextArrow: null,
+            //     prevArrow: null,
+            //     }
+            // }
+            // ]
+        };
+    
 
 
 
@@ -217,20 +271,33 @@ const LandingPage = () => {
 
                 </div>
                 <div className="landing_meet_sponsor">
-                    <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>
-                    <div className="landing_meet_sponsor_logo_div">
-                        <img src={sponsor1} alt="SOHAI" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor2} alt="NYCN-AJIF" className='landing_meet_sponsor_logo2' />
-                        <img src={sponsor3} alt="AJIF Sports Council" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor4} alt=" KOBIS GLOBAL" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor5} alt="THE CURVE" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor6} alt=" KLICK Designs" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor7} alt=" Ajegunle Co-Working Hub" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor8} alt=" NYCN-IFELODUN" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor9} alt="MULA Integrated Concepts" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor10} alt="Heart To Give Initiative" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor11} alt="ANAYD" className='landing_meet_sponsor_logo_div_img' />
-                        <img src={sponsor12} alt="smartpadi" className='landing_meet_sponsor_logo_div_img' />
+                    <h1 className='landing_meet_sponsor_h1'>Meet our and partners</h1>
+                    <div className='SponsorsLogo'>
+                        
+                        <img src={sponsor1} alt="SOHAI" className='Sponsors-Logos'/>
+
+                        <img src={sponsor3} alt="AJIF Sports Council" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor2} alt="NYCN-AJIF" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor4} alt=" KOBIS GLOBAL" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor5} alt="THE CURVE" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor6} alt=" KLICK Designs" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor7} alt=" Ajegunle Co-Working Hub" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor8} alt=" NYCN-IFELODUN" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor9} alt="MULA Integrated Concepts" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor10} alt="Heart To Give Initiative" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor11} alt="ANAYD" className='Sponsors-Logos'/>
+                        
+                        <img src={sponsor12} alt="smartpadi" className='Sponsors-Logos'/>
+
                     </div>
                 </div>
                 <div className="landing_news">
