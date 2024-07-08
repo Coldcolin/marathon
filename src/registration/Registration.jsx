@@ -55,11 +55,20 @@ const Registration = () => {
             <div className="Registration-Two">
             <p>Date of Birth</p>
                 <div>
-                    <input placeholder="dd-mm-yy" required={true} onChange={(e)=> setUserData((p)=> {return {...p, DOB: e.target.value}})}/>
+                    <input placeholder="dd-mm-yy" type="date" required={true} onChange={(e)=> setUserData((p)=> {return {...p, DOB: e.target.value}})}/>
                     <label>Sex</label>
-                    <input placeholder="Male/Female" required={true} onChange={(e)=> setUserData((p)=> {return {...p, Sex: e.target.value}})}/>
+                    <select required={true} onChange={(e)=> setUserData((p)=> {return {...p, Sex: e.target.value}})}>
+                        <option value="">--select--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
                     <label>Marital Status</label>
-                    <input placeholder="Married/Single/Divorced" required={true} onChange={(e)=> setUserData((p)=> {return {...p, Status: e.target.value}})}/>
+                    <select required={true} onChange={(e)=> setUserData((p)=> {return {...p, Status: e.target.value}})}>
+                        <option value="">--select--</option>
+                        <option value="Married">Married</option>
+                        <option value="Single">Single</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
                 </div>
             </div>
             <div className="Registration-Three">
@@ -80,7 +89,13 @@ const Registration = () => {
                     <input placeholder="Street address" required={true} onChange={(e)=> setUserData((p)=> {return {...p, Address: e.target.value}})}/>
                     {/* <input placeholder="Street address Line 2"/> */}
                     <div>
-                        <input placeholder="LGA" required={true} onChange={(e)=> setUserData((p)=> {return {...p, LGA: e.target.value}})}/>
+                        <select required={true} onChange={(e)=> setUserData((p)=> {return {...p, LGA: e.target.value}})}>
+                            <option value="">--LGA--</option>
+                            <option value="Ajeromi Ifelodun LGA">Ajeromi Ifelodun LGA</option>
+                            <option value="Ifelodun LCDA">Ifelodun LCDA</option>
+                            <option value="">others</option>
+                        </select>
+                        <input placeholder="If others please indicate" required={true} onChange={(e)=> setUserData((p)=> {return {...p, LGA: e.target.value}})}/>
                         <input placeholder="Ward" required={true} onChange={(e)=> setUserData((p)=> {return {...p, Ward: e.target.value}})}/>
                     </div>
                     
@@ -107,6 +122,18 @@ const Registration = () => {
                 </div>
             </div>
             <div className="Registration-Seven">
+            <div className="Registration-Category">
+            <p>Marathon Category</p>
+            <div>
+                <select required={true} onChange={(e)=> setUserData((p)=> {return {...p, Category: e.target.value}})}>
+                    <option value="">--Select Category--</option>
+                    <option value="Master Division">Master Division (Persons with disability 18-29 years)
+</option>
+                    <option value="Open Division">Open division (18-35 years)
+</option>
+                </select>
+            </div>
+            </div>
             <p>T-shirt Size</p>
                 <div>
                     <div>

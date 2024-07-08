@@ -80,6 +80,11 @@
             padding-inline: 5px;
             height: 30px;
         }
+        & select{
+            flex: 1;
+            padding-inline: 5px;
+            height: 30px;
+        }
     }
 }
 .Registration-Three{
@@ -123,6 +128,11 @@
         flex-wrap: wrap;
 
         & input{
+            flex: 1;
+            padding: 5px;
+            height: 30px;
+        }
+        & select{
             flex: 1;
             padding: 5px;
             height: 30px;
@@ -189,8 +199,19 @@
 .Registration-Seven{
     width: 100%;
     display: flex;
+    flex-direction: column;
     padding-block: 7px;
     height: auto;
+    gap: 20px;
+
+    .Registration-Category{
+        width: 100%;
+
+        & select{
+            width: 100%;
+            height: 30px;
+        }
+    }
 
     & p{
         flex: 1;
