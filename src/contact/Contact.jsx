@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Contact.css'
 import './ContactRes.css'
+import { RoadMap } from '../landingPage/LandingPage';
 
 const Contact = () => {
 
@@ -50,7 +51,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="contactUs_get_intouch_map"></div>
+      <RoadMap/>
     </div>
   )
 }

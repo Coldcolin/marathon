@@ -6,29 +6,30 @@ import news1 from '../assets/news1.jpg';
 import news2 from '../assets/news2.jpg';
 import news3 from '../assets/news3.jpg';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Newscard } from '../landingPage/LandingPage';
+import { useEffect } from 'react';
 
 const Blog = () => {
   const location = useLocation();
   const { img, H4, Span, content } = location.state || {};
-  console.log(img)
-  // if (!img || !H4 || !Span || !content) {
-  //   return <div>No blog post selected.</div>;
-  // }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [img]);
 
-  const BlogCard = (props) => {
-    return (
-      <div className='blog_card_body'>
-        <div className='blog_card_image_holder'>
-          <img src={blog2} alt="" />
-        </div>
-        <div className='blog_write_holder'>
-          <h1 className='blog_write_holder_h1'>{props.h1}</h1>
-          <p className='blog_write_holder_p'>{props.p}</p>
-          <h2 className='blog_write_holder_h2'>{props.btn}</h2>
-        </div>
-      </div>
-    )
-  }
+  // const BlogCard = (props) => {
+  //   return (
+  //     <div className='blog_card_body'>
+  //       <div className='blog_card_image_holder'>
+  //         <img src={blog2} alt="" />
+  //       </div>
+  //       <div className='blog_write_holder'>
+  //         <h1 className='blog_write_holder_h1'>{props.h1}</h1>
+  //         <p className='blog_write_holder_p'>{props.p}</p>
+  //         <h2 className='blog_write_holder_h2'>{props.btn}</h2>
+  //       </div>npmrun
+  //     </div>
+  //   )
+  // }
 
 
 
@@ -79,7 +80,7 @@ const Blog = () => {
             </div>
             <div className='blog_landing_write_holder_Div'>
               <h3 className='blog_landing_write_holder_H3'>How to Register</h3>
-              <p className='blog_landing_write_holder_P'>If you are interested in volunteering for the Ajegunle City Youth Marathon, 2024 event, simply fill out the online registration form <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth</a> , submission closes by July 28th, 2024.
+              <p className='blog_landing_write_holder_P'>If you are interested in volunteering for the Ajegunle City Youth Marathon, 2024 event, simply fill out the online registration form <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024</a> , submission closes by July 28th, 2024.
                 Space is limited, so don't miss this chance to be part of an inspiring and rewarding experience. Join us in shaping a healthier and more active community for our youth!
               </p>
               <p className='blog_landing_write_holder_P'>For any inquiries or assistance with registration, please contact: Amudalat Temitope Oloola:
@@ -128,7 +129,7 @@ const Blog = () => {
               This is a great milestone recorded in our planning process to ensure successful implementation outcomes of the event; aimed to become the largest Youth Engagement Platform in the annals of the NYCN-AJIF Local Branch, to drive social transformation and positive change among youths and advocacy for good governance in Ajeromi-Ifelodun LGA at large.
             </p>
             <p className='blog_landing_write_holder_p'>
-              To join our Volunteer Youth Force simply fill out the online registration form: <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth</a> , submission closes by July 28th, 2024.
+              To join our Volunteer Youth Force simply fill out the online registration form: <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2025">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth-Marathon-2024</a> , submission closes by July 28th, 2024.
             </p>
             <p className='blog_landing_write_holder_p'>
               It Can Only Get Better!
@@ -197,10 +198,31 @@ const Blog = () => {
             <div className="blog_title_header">Other Top Stories</div>
             <div className="blog_card_container">
               <div className="blog_card_wrapper">
+                {/* <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
                 <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
                 <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
-                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
-                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' /> */}
+
+                {/* <div className="landing_news_wrapper"> */}
+                <Newscard
+                  H4={"AJCYM 2024 -"}
+                  Span={"End Point"}
+                  img={news1}
+                  content={"The Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024; 30th November, 2024 @The Sports Ground, Nigeria Army Signals Barracks, Mile 2."}
+                />
+                <Newscard
+                  H4={"AJCYM 2024 -"}
+                  Span={"Flag-Off"}
+                  img={news2}
+                  content={"The Ajegunle City Youth Marathon is Raging higher as we officially flagged-off the project at the floor of The Ifelodun Local Youth Council Management Committee Meeting. Watch out for the biggest gig ever in the city of Ajegunle,.......Coming Soon!"}
+                />
+                <Newscard
+                  img={news3}
+                  H4={"AJCYM 2024 -"}
+                  Span={"Volunteer Registration!"}
+                  content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
+                />
+                {/* </div> */}
               </div>
             </div>
           </>

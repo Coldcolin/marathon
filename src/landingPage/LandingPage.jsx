@@ -1,7 +1,7 @@
 import './LandingPage.css'
 import './LandingPageRes.css'
 import { IoTrophyOutline } from 'react-icons/io5'
-import image2 from '../assets/image2.png'
+import image2 from '../assets/runImg.jpg'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/readyNew.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'
@@ -26,18 +26,55 @@ import sponsor10 from '../assets/sponsor10.jpg'
 import sponsor11 from '../assets/sponsor11.jpg'
 import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
-import { NavLink, useNavigate, Link} from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 
 
 export const RoadMap = () => {
     return (
         <div className="landing_road_map">
-            <div className="landing_road_map_title">
-                Route Map for Ajegunle City Youth Marathon
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.222631862073!2d3.352426541093896!3d6.443926885278919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bcc76eaf46b%3A0xe296700d8fa9e6f2!2sAjegunle%2C%20Ikeja%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720429094726!5m2!1sen!2sng"
+                width="100%"
+                height="600"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            />
+        </div>
+    )
+}
+
+export const Newscard = ({ img, H4, Span, content }) => {
+    const nav = useNavigate()
+
+
+    const handleClick = () => {
+        nav('/blog', {
+            state: {
+                img, H4, Span, content
+            },
+        });
+    };
+
+
+
+    return (
+        <div className='landing_news_card'>
+            <div className="landing_news_img_container">
+                <img src={img} alt="" />
             </div>
-            <div className="landing_road_map_img_container">
-                <img src={map} alt="" />
+            <div className="landing_news_article">
+                <div className="landing_news_article_header">
+                    <h4 className='landing_news_article_header_h4'>{H4} <span className='landing_news_article_header_span'>{Span}</span></h4>
+                </div>
+                <div className="landing_news_article_content">
+                    {content}
+                </div>
+                <div className="landing_news_article_btn">
+                    <button className='landing_news_article_btn_span' onClick={handleClick}>View all <GoArrowRight /></button>
+                </div>
             </div>
         </div>
     )
@@ -57,7 +94,7 @@ const LandingPage = () => {
                     <img src={props.pix} alt="link logo" className='landing_ready_card_img' />
                 </div>
                 <div className="landing_ready_card_holder" style={{ backgroundColor: props.bg }}>
-                    <a href="" className='landing_ready_card_A'>{props.link}</a>
+                    <Link to={props.tag} className='landing_ready_card_A'>{props.link}</Link>
                 </div>
             </div>
         )
@@ -125,38 +162,7 @@ const LandingPage = () => {
 
 
 
-    const Newscard = ({img, H4, Span, content }) => {
 
-
-        const handleClick = () => {
-            nav('/blog', {
-                state: {
-                    img, H4, Span, content 
-                },
-            });
-        };
-
-
-
-        return (
-            <div className='landing_news_card'>
-                <div className="landing_news_img_container">
-                    <img src={img} alt="" />
-                </div>
-                <div className="landing_news_article">
-                    <div className="landing_news_article_header">
-                        <h4 className='landing_news_article_header_h4'>{H4} <span className='landing_news_article_header_span'>{Span}</span></h4>
-                    </div>
-                    <div className="landing_news_article_content">
-                        {content}
-                    </div>
-                    <div className="landing_news_article_btn">
-                        <button className='landing_news_article_btn_span' onClick={handleClick}>View all <GoArrowRight /></button>
-                    </div>
-                </div>
-            </div>
-        )
-    }
 
 
     return (
@@ -164,8 +170,8 @@ const LandingPage = () => {
             <div className="landing_body">
                 <div className="landing_hero">
                     <div className="landing_hero_wrapper">
+                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH MARATHON, 2024”</h1>
                         <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
-                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH <br /> MARATHON, 2024”</h1>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
                             <Link to="/register" className='landing_hero_btn'>Register now</Link>
@@ -176,9 +182,9 @@ const LandingPage = () => {
                     <div className="landing_ready_wrapper">
                         <h1 className='landing_ready_wrapper_h1'>Are you ready ?</h1>
                         <div className="landing_ready_wrapper_card_contain">
-                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' />
-                            <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' />
-                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' />
+                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"/register"} />
+                            <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' tag={"https://paystack.com/buy/PROD_vxkwxr3edops7u9"} />
+                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' tag={"https://paystack.com/pay/o7t1hpl2mt"} />
                         </div>
                     </div>
                 </div>
@@ -198,6 +204,7 @@ const LandingPage = () => {
                 <div className="landing_price_category">
                     <div className="landing_price_price_container">
                         <div className="landing_price_category_wrapper">
+                            <PriceWon icon='&#8358;' title='Join The Race' article='The  Marathon goes beyond a race. It is one way to get inspired.' bg='rgba(23, 183, 136, 1)' />
                             <PriceWon icon='&#8358;' title='N300k To Be Won' article='About 300,000 naira is available to be won by contestants.' bg='rgba(23, 183, 136, 1)' />
                             <PriceWon icon={<IoTrophyOutline />} title='Amazing Prizes' article='Complementary prices are  up for grabs.' bg='rgba(23, 150, 183, 1)' />
                             <PriceWon icon={<FitImage />} title='Stay Fit' article='As race day gets closer, you should also begin to fine-tune some aspects of your diet.' bg='rgba(52, 103, 245, 1)' />
@@ -207,6 +214,7 @@ const LandingPage = () => {
                 </div>
                 <div className="landing_page_map_container">
                     <RoadMap />
+
                 </div>
                 <div className="landing_meet_sponsor">
                     <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>
@@ -243,11 +251,11 @@ const LandingPage = () => {
                         <Newscard
                             img={news3}
                             H4={"AJCYM 2024 -"}
-                            Span={"Volunteer Registration!"}
+                            Span={"Volunteer!"}
                             content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
                         />
                     </div>
-                    <btn className="landing_news_view_more_btn">View more post</btn>
+                    <btn className="landing_news_view_more_btn" onClick={() => nav("/blog")}>View more post</btn>
                 </div>
                 <div className="landing_become_a_sponsor">
                     <div className="landing_become_a_sponsor_wrapper">
@@ -264,9 +272,11 @@ const LandingPage = () => {
                                     <li>Platinum</li>
                                     <li>Diamond</li>
                                 </ul>
-                                <button className='landing_become_a_sponsor_wrapper_2_button'>
-                                    <NavLink to={"/contact_us"} className={'menu_not_active'}>Contact us</NavLink>
-                                </button>
+                                <NavLink to={"/contact_us"} className={'menu_not_active_wrapper2'}>
+                                    <button className='landing_become_a_sponsor_wrapper_2_button'>
+                                        Contact us
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
