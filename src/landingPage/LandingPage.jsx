@@ -30,7 +30,6 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 
 
-
 export const RoadMap = () => {
     return (
         <div className="landing_road_map">
@@ -175,7 +174,7 @@ const LandingPage = () => {
                         <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
-                            <button className='landing_hero_btn'><NavLink to={"/register"} className={"landing_hero_btn_navLink"}>Register now</NavLink></button>
+                            <Link to="/register" className='landing_hero_btn'>Register now</Link>
                         </div>
                     </div>
                 </div>
