@@ -292,6 +292,10 @@
     }
     .Registration-Form{
         width: 70%;
+
+        & button {
+            width: 70%;
+        }
     }
     .Registration-Payment{
             & .Registration-Eight{

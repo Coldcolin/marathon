@@ -66,6 +66,11 @@ const Registration = () => {
             <p>Phone Number</p>
                 <div>
                     <input placeholder="enter a valid phone number" required={true} onChange={(e)=> setUserData((p)=> {return {...p, Phone: e.target.value}})}/>
+                </div>
+            </div>
+            <div className="Registration-Three">
+            <p>Email</p>
+                <div>
                     <input placeholder="example@xample.com" required={true} onChange={(e)=> setUserData((p)=> {return {...p, email: e.target.value}})}/>
                 </div>
             </div>
