@@ -575,4 +575,39 @@
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 
+
 }
+
+
+.menu_not_active_wrapper2{
+    /* width: 177px; */
+    /* height: 57px; */
+    /* color: rgba(255, 255, 255, 1); */
+    /* text-decoration: none; */
+}
+
+.SponsorsLogo{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-block: 20px;
+    gap: 20px;
+    /* background-color: red; */
+    & img{
+        width: 15%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+
+}
+
+@media screen and (width <= 580px){
+    .SponsorsLogo{
+        & img{
+            aspect-ratio: 3/4;
+        }
+    }
+}
+

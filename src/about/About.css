@@ -87,32 +87,43 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
+    height: auto;
 }
 
 .about_AJYCM_project_article_image_wrapper {
     width: 45%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: yellow; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 20px;
 
 }
 
 .about_AJYCM_project_article_left_image_container1 {
     width: 50%;
-    height: 80vh;
+    height: 35vh;
+    margin-bottom: 30px;
+
 }
 
 .about_AJYCM_project_article_left_image {
-    width: 95%;
-    /* height: 30%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about_AJYCM_project_article_right_image_container2_P1 {
     text-align: center;
+    font-weight: 600;
 }
 
 .about_AJYCM_project_article_right_image_container2_P1_Span {
-    font-weight: lighter;
+    /* font-weight: lighter; */
     font-size: 14px;
+    font-weight: 600;
 }
 
 .about_AJYCM_project_article_right_image_container1 {
@@ -124,21 +135,26 @@
 }
 
 .about_AJYCM_project_article_right_image_container2 {
-    width: 48%;
-    height: 80vh;
+    width: 50%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
+    /* background-color: yellow; */
+
 }
 
 .about_AJYCM_project_article_right_image1 {
     width: 100%;
-    height: 49%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 60px;
 }
 
 .about_AJYCM_project_article_right_image2 {
     width: 100%;
-    height: 49%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about_AJYCM_project_article {
@@ -183,7 +199,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 150px;
 }
 
@@ -262,4 +278,11 @@
     font-family: 'Roboto', sans-serif;
     /* color: rgba(23, 150, 183, 1); */
     /* text-decoration: underline; */
+}
+
+@media screen and (width <= 580px) {
+    .about_card_name_committe_wrapper{
+        gap: 5px;
+    }
+    
 }
