@@ -11,7 +11,7 @@ import logo from '../assets/ajegunleCityMarathon.png'
 const routes = [
     { path: '/', name: 'Home' },
     { path: '/about', name: 'About' },
-    // { path: '/get_involve', name: 'Get involve' },
+    { path: '/get_involve', name: 'Get involve' },
     { path: '/blog', name: 'Blog' },
     // { path: '/resources', name: 'Resources' },
     // { path: '/gallery', name: 'Gallery' },

@@ -19,7 +19,6 @@
 
 .landing_hero_wrapper {
     width: 90%;
-    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,14 +30,12 @@
     color: rgba(23, 183, 136, 1);
     line-height: 48px;
     font-weight: 800;
-    /* width: 58%; */
 }
 
 .landing_hero_wrapper_h1 {
     font-size: 60px;
     font-weight: 800;
     line-height: 90px;
-    /* width: 58%; */
     color: rgba(255, 255, 255, 1);
 }
 
@@ -68,10 +65,6 @@
     line-height: 27px;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 }
 
 .landing_hero_btn_navLink{
@@ -81,7 +74,6 @@
 
 .landing_ready {
     width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +122,6 @@
 
 .landing_ready_card_holder {
     width: 100%;
-    /* height: 30%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,12 +132,10 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    /* width: 75%; */
     color: #ffff;
 }
 
 .landing_category {
-    /* height: 85vh; */
     width: 100%;
     background: rgba(217, 217, 217, 0.4);
     display: flex;
@@ -157,7 +146,6 @@
 .landing_category_wrapper {
     width: 90%;
     height: 90%;
-    /* background-color: purple; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +175,6 @@
 
 .landing_category_card_container {
     width: 100%;
-    /* height: 55vh; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,7 +184,7 @@
 
 .landing_category_card {
     width: 24%;
-    min-height: 75vh;
+    height: 85vh;
     background: #ffff;
     display: flex;
     flex-direction: column;
@@ -212,7 +199,7 @@
 
 .landing_category_card_currency_div {
     width: 20%;
-    height: 8.4vh;
+    height: 7.8vh;
     background: rgba(217, 217, 217, 0.4);
     font-size: 24px;
     border-radius: 50%;
@@ -324,7 +311,6 @@
 
 .landing_road_map {
     width: 100%;
-    /* height: 70vh; */
 }
 
 .landing_road_map_title {
@@ -352,7 +338,6 @@
 
 .landing_meet_sponsor {
     width: 100%;
-    /* height: 60vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -369,7 +354,6 @@
 
 .landing_meet_sponsor_logo_div {
     width: 90%;
-    /* height: 40%; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -378,7 +362,6 @@
 }
 
 .landing_meet_sponsor_logo_div_img {
-    /* height: 22vh; */
     width: 19%;
 }
 
@@ -388,7 +371,6 @@
 
 .landing_news {
     width: 100%;
-    /* height: 100vh; */
     background-color: rgba(31, 227, 169, 1);
     display: flex;
     flex-direction: column;
@@ -467,7 +449,7 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba(38, 38, 38, 1);
-    overflow: auto;
+    overflow: hidden;
 }
 
 .landing_news_article_btn {
@@ -487,6 +469,7 @@
     cursor: pointer;
     border: none;
     background: none;
+    display: flex;
 }
 
 .landing_news_view_more_btn {
@@ -533,16 +516,6 @@
     background-size: cover;
 }
 
-/* .landing_become_a_sponsor_wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(32, 191, 232, 0.5);
-} */
-
 .landing_become_a_sponsor_wrapper_1 {
     width: 100%;
     height: 25%;
@@ -572,7 +545,6 @@
     height: 30%;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     align-items: center;
     justify-content: space-between;
 }
@@ -604,11 +576,3 @@
     cursor: pointer;
 
 }
-
-.menu_not_active_wrapper2{
-    /* width: 177px; */
-    /* height: 57px; */
-    /* color: rgba(255, 255, 255, 1); */
-    /* text-decoration: none; */
-}
-

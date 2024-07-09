@@ -1,6 +1,6 @@
 .get_involve_main_body {
     width: 100%;
-    min-height: 100vh;
+    min-height: max-content;
     height: max-content;
 }
 
@@ -21,7 +21,7 @@
 
 .get_involve_card_container {
     width: 100%;
-    min-height: 120vh;
+    min-height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
