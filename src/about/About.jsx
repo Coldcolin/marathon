@@ -11,18 +11,18 @@ import about4 from '../assets/about4.png'
 import about5 from '../assets/about5.png'
 import about6 from '../assets/about6.png'
 import lawal from "../assets/Lawal.jpg"
-import commitee1 from '../assets/commitee1.png'
-import commitee2 from '../assets/commitee2.png'
-import commitee3 from '../assets/commitee3.png'
-import commitee4 from '../assets/commitee4.png'
-import commitee5 from '../assets/commitee5.png'
-import commitee6 from '../assets/commitee6.png'
-import commitee7 from '../assets/commitee7.png'
-import commitee8 from '../assets/commitee8.png'
-import commitee9 from '../assets/commitee9.png'
-import commitee10 from '../assets/commitee10.png'
-import commitee11 from '../assets/commitee11.png'
-import commitee12 from '../assets/commitee12.png'
+import newCommitee1 from '../assets/newCommitee1.jpg'
+import newCommitee2 from '../assets/newCommitee2.jpg'
+import newCommitee3 from '../assets/newCommitee3.jpg'
+import newCommitee4 from '../assets/newCommitee4.jpg'
+import newCommitee5 from '../assets/newCommitee5.jpg'
+import newCommitee6 from '../assets/newCommitee6.jpg'
+import newCommitee7 from '../assets/newCommitee7.jpg'
+import newCommitee8 from '../assets/newCommitee8.jpg'
+import newCommitee9 from '../assets/newCommitee9.jpg'
+import newCommitee10 from '../assets/newCommitee10.jpg'
+import newCommitee11 from '../assets/newCommitee11.jpg'
+import newCommitee12 from '../assets/newCommitee12.jpg'
 import { NavLink } from 'react-router-dom'
 
 
@@ -135,18 +135,18 @@ const About = () => {
           <h1 className='about_AJYCM_local_committee_body_H1'>Local Organising Committee</h1>
           <p className='about_AJYCM_local_committee_body_P'> Names of LOC Members and short profile</p>
           <div className="about_AJYCM_local_committee_card_body">
-            <AboutCard img={commitee1} H2='ISAAC MOSES' P={"GENERAL SECRETARY, NYCN-AJIF/PROJECT LEAD, ACYM2024"} />
-            <AboutCard img={commitee2} H2='AMB. ISAAC SUCCESS OMOYELE' P={"COORDINATOR, NYCN-AJIF/YOUTH HOST & HEAD OF PUBLIC RELATIONS, AJCYM2024"} />
-            <AboutCard img={lawal} H2='COMRD. ADEMOLA IGI-ABA LAWAL' P={"COORDINATOR, NYCN-IFELODUN/YOUTH CO-HOST & HEAD OF COMMUNITY MOBILIZATION, ACYM2024"} />
-            <AboutCard img={commitee4} H2='HON. MC.ANTHONY ANAELECHUKWU' P={"DIRECTOR GENERAL, AJEROMI-IFELODUN SPORTS COUNCIL/TECHNICAL ADVISOR & CHIEF OFFICIAL, ACYM2024"} />
-            <AboutCard img={commitee5} H2='PRINCE OGAGA WOWO' P={"CEO, KOBIS GLOBAL/STRATEGIC MEDIA & COMMUNICATIONS LEAD ACYM2024"} />
-            <AboutCard img={commitee6} H2='OGHENEKARO RACHEAL LAWRENCE' P={"GENDER ADVOCACY FOCAL POINT, SOHAI/HEAD OF MARKETING & ADVERTISEMENT, ACYM2024"} />
-            <AboutCard img={commitee7} H2='SAMUEL KELECHI' P={"CEO, THE CURVE/ICT & STRATEGIC KNOWLEDGE MANAGEMENT LEAD, ACYM2024"} />
-            <AboutCard img={commitee8} H2='OGHENEKOME RICHARD' P={"PROJECT DIRECTOR, SOHAI/QUALITY ASSURANCE LEAD, ACYM2024"} />
-            <AboutCard img={commitee9} H2='MICHAEL UTEDI' P={"CEO, MULA INTEGRATED CONCEPT/LOGISTIC & SUPPLY LEAD, ACYM2024"} />
-            <AboutCard img={commitee10} H2="ESE UCHE GOD'S-WILL" P={"CEO, KLICK DESIGNS/CONTENT MANAGEMENT AND BRANDING LEAD, ACYM2024"} />
-            <AboutCard img={commitee11} H2='HON. AMUDALAT TEMITOPE OLOOLA' P={"SOCIAL SECREATRY, NYCN-IFELODUN/VOLUNTEER COORDINATOR, ACYM2024"} />
-            <AboutCard img={commitee12} H2='GODSPOWER  O. EBIZE' P={"CEO, KODED LAFF ENTERTAINMENT/MARKETING & PUBLICITY,  AYCM2024"} />
+            <AboutCard img={newCommitee1} H2='ISAAC MOSES' P={"GENERAL SECRETARY, NYCN-AJIF/PROJECT LEAD, ACYM2024"} />
+            <AboutCard img={newCommitee2} H2='AMB. ISAAC SUCCESS OMOYELE' P={"COORDINATOR, NYCN-AJIF/YOUTH HOST & HEAD OF PUBLIC RELATIONS, AJCYM2024"} />
+            <AboutCard img={newCommitee3} H2='COMRD. ADEMOLA IGI-ABA LAWAL' P={"COORDINATOR, NYCN-IFELODUN/YOUTH CO-HOST & HEAD OF COMMUNITY MOBILIZATION, ACYM2024"} />
+            <AboutCard img={newCommitee4} H2='HON. MC.ANTHONY ANAELECHUKWU' P={"DIRECTOR GENERAL, AJEROMI-IFELODUN SPORTS COUNCIL/TECHNICAL ADVISOR & CHIEF OFFICIAL, ACYM2024"} />
+            <AboutCard img={newCommitee5} H2='PRINCE OGAGA WOWO' P={"CEO, KOBIS GLOBAL/STRATEGIC MEDIA & COMMUNICATIONS LEAD ACYM2024"} />
+            <AboutCard img={newCommitee6} H2='OGHENEKARO RACHEAL LAWRENCE' P={"GENDER ADVOCACY FOCAL POINT, SOHAI/HEAD OF MARKETING & ADVERTISEMENT, ACYM2024"} />
+            <AboutCard img={newCommitee7} H2='SAMUEL KELECHI' P={"CEO, THE CURVE/ICT & STRATEGIC KNOWLEDGE MANAGEMENT LEAD, ACYM2024"} />
+            <AboutCard img={newCommitee8} H2='OGHENEKOME RICHARD' P={"PROJECT DIRECTOR, SOHAI/QUALITY ASSURANCE LEAD, ACYM2024"} />
+            <AboutCard img={newCommitee9} H2='MICHAEL UTEDI' P={"CEO, MULA INTEGRATED CONCEPT/LOGISTIC & SUPPLY LEAD, ACYM2024"} />
+            <AboutCard img={newCommitee10} H2="ESE UCHE GOD'S-WILL" P={"CEO, KLICK DESIGNS/CONTENT MANAGEMENT AND BRANDING LEAD, ACYM2024"} />
+            <AboutCard img={newCommitee11} H2='HON. AMUDALAT TEMITOPE OLOOLA' P={"SOCIAL SECREATRY, NYCN-IFELODUN/VOLUNTEER COORDINATOR, ACYM2024"} />
+            <AboutCard img={newCommitee12} H2='GODSPOWER  O. EBIZE' P={"CEO, KODED LAFF ENTERTAINMENT/MARKETING & PUBLICITY,  AYCM2024"} />
           </div>
 
         </div>

@@ -2,7 +2,7 @@ import './LandingPage.css'
 import './LandingPageRes.css'
 import { IoTrophyOutline } from 'react-icons/io5'
 import image2 from '../assets/runImg.jpg'
-import image3 from '../assets/image3.png'
+import image3 from '../assets/newImg.jpg'
 import image4 from '../assets/readyNew.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'
 import map from '../assets/ajegunleMap.png'
@@ -14,19 +14,20 @@ import Slider from "react-slick";
 import news1 from '../assets/news1.jpg'
 import news2 from '../assets/news2.jpg'
 import news3 from '../assets/news3.jpg'
-import sponsor1 from '../assets/sponsor1.jpg'
-import sponsor2 from '../assets/sponsor2.png'
-import sponsor3 from '../assets/sponsor3.jpg'
-import sponsor4 from '../assets/sponsor4.png'
-import sponsor5 from '../assets/sponsor5.jpg'
-import sponsor6 from '../assets/sponsor6.png'
-import sponsor7 from '../assets/sponsor7.jpg'
-import sponsor8 from '../assets/sponsor8.jpg'
-import sponsor9 from '../assets/sponsor9.jpg'
-import sponsor10 from '../assets/sponsor10.jpg'
-import sponsor11 from '../assets/sponsor11.jpg'
-import sponsor12 from '../assets/sponsor12.png'
-import { GoArrowRight } from 'react-icons/go'
+import newSponsor1 from '../assets/newSponsor1.jpg'
+import newSponsor2 from '../assets/newSponsor2.jpg'
+import newSponsor3 from '../assets/newSponsor3.jpg'
+import newSponsor4 from '../assets/newSponsor4.jpg'
+import newSponsor5 from '../assets/newSponsor5.jpg'
+import newSponsor6 from '../assets/newSponsor6.jpg'
+import newSponsor7 from '../assets/newSponsor7.jpg'
+import newSponsor8 from '../assets/newSponsor8.jpg'
+import newSponsor9 from '../assets/newSponsor9.jpg'
+import newSponsor10 from '../assets/newSponsor10.jpg'
+import newSponsor11 from '../assets/newSponsor11.jpg'
+import newSponsor12 from '../assets/newSponsor12.jpg'
+import { GoArrowRight } from 'react-icons/go';
+import { GiThrowingBall } from 'react-icons/gi'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 
@@ -106,13 +107,14 @@ const LandingPage = () => {
         return (
             <div className='landing_category_card'>
                 <div className="landing_category_card_currency_div">
-                    &#8358;
+                    {/* &#8358; */}
+                    <GiThrowingBall />
                 </div>
                 <div className="landing_category_card_title_div">
                     <h2 className='landing_category_card_h2'>{props.h2}</h2>
                     <h2 className='landing_category_card_h2'>{props.h3}</h2>
                 </div>
-                <ul>
+                <ul className='list-disc'>
                     {props.l1 && <li>{props.l1}</li>}
                     {props.l2 && <li>{props.l2}</li>}
                     {props.l3 && <li>{props.l3}</li>}
@@ -161,59 +163,59 @@ const LandingPage = () => {
         )
     }
 
-        const firstSettings = {
-            dots: false,
-            infinite: true,
-            speed: 2200,
-            // slidesToShow: 3.25,
-            // slidesToScroll: 1,
-            // initialSlide: 0,
-            // autoplay: true,
-            // pauseOnHover: true,
-            // autoplaySpeed: 10000,
-            // cssEase: "linear",
-            // nextArrow: <SampleNextArrow />,
-            // prevArrow: <SampleNextArrow />,
-            // responsive: [
-            // {
-            //     breakpoint: 1024,
-            //     settings: {
-            //     slidesToShow: 2.5,
-            //     slidesToScroll: 1.5,
-            //     infinite: true,
-            //     dots: false
-            //     }
-            // },
-            // {
-            //     breakpoint: 768,
-            //     settings: {
-            //     slidesToShow: 1.5,
-            //     slidesToScroll: 1.5,
-            //     infinite: true,
-            //     dots: false
-            //     }
-            // },
-            // {
-            //     breakpoint: 600,
-            //     settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1,
-            //     infinite: true,
-            //     dots: false
-            //     }
-            // },
-            // {
-            //     breakpoint: 425,
-            //     settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1,
-            //     nextArrow: null,
-            //     prevArrow: null,
-            //     }
-            // }
-            // ]
-        };
-    
+    const firstSettings = {
+        dots: false,
+        infinite: true,
+        speed: 2200,
+        // slidesToShow: 3.25,
+        // slidesToScroll: 1,
+        // initialSlide: 0,
+        // autoplay: true,
+        // pauseOnHover: true,
+        // autoplaySpeed: 10000,
+        // cssEase: "linear",
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SampleNextArrow />,
+        // responsive: [
+        // {
+        //     breakpoint: 1024,
+        //     settings: {
+        //     slidesToShow: 2.5,
+        //     slidesToScroll: 1.5,
+        //     infinite: true,
+        //     dots: false
+        //     }
+        // },
+        // {
+        //     breakpoint: 768,
+        //     settings: {
+        //     slidesToShow: 1.5,
+        //     slidesToScroll: 1.5,
+        //     infinite: true,
+        //     dots: false
+        //     }
+        // },
+        // {
+        //     breakpoint: 600,
+        //     settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     infinite: true,
+        //     dots: false
+        //     }
+        // },
+        // {
+        //     breakpoint: 425,
+        //     settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     nextArrow: null,
+        //     prevArrow: null,
+        //     }
+        // }
+        // ]
+    };
+
 
 
 
@@ -225,8 +227,10 @@ const LandingPage = () => {
             <div className="landing_body">
                 <div className="landing_hero">
                     <div className="landing_hero_wrapper">
-                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH MARATHON, 2024”</h1>
-                        <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
+                        <div>
+                            <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH MARATHON”</h1>
+                            <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
+                        </div>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
                             <button className='landing_hero_btn'><NavLink to={"/register"} className={"landing_hero_btn_navLink"}>Register now</NavLink></button>
@@ -235,7 +239,10 @@ const LandingPage = () => {
                 </div>
                 <div className="landing_ready">
                     <div className="landing_ready_wrapper">
-                        <h1 className='landing_ready_wrapper_h1'>Are you ready ?</h1>
+                        <div>
+                            <h1 className='landing_ready_wrapper_h1'>Are you ready ?</h1>
+                            <p className='landing_ready_wrapper_P'>#RUNAjegunle | 30th November, 2024</p>
+                        </div>
                         <div className="landing_ready_wrapper_card_contain">
                             <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"/register"} />
                             <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' tag={"https://paystack.com/buy/PROD_vxkwxr3edops7u9"} />
@@ -248,21 +255,50 @@ const LandingPage = () => {
                         <h1 className='landing_category_wrapper_h1'>CATEGORY OF PARTICIPANTS</h1>
                         <p className='landing_category_wrapper_p'>Teams can compete in the following <span>categories</span>;</p>
                         <div className="landing_category_card_container">
-                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Open Division (Individuals)  ' h3='Adolescents and Young Persons aged 16 - 35years (5km)' l1='High School Students (all current high school students)' l2='College Students (all current college students)' l3="Youth Self-Employed/Entrepreneurs" l4="Youth out of school/NEET (Not in Education, Employment and Training)" l5="Police or Military (all active duty or retired firemen, policemen or military personnel" l6="Government Agency (all current or retired from same government agency)" />
-                            <CategoryCard h2='Corporate Division (Group/Team)  ' h3='all employees from the same company/organisation (5km)' l1='Male (all males)' l2='Female (all females)' />
-                            <CategoryCard h2='VVIP/VIP Division  ' h3='All Sponsors, Government and Private Partners representatives and Key community stakeholders.' l1='Male (all males)' l2='Female (all females)' />
+                            <CategoryCard
+                                h2='Master Division - Persons with Disability'
+                                // h3='Persons with Disability'
+                                l1='Wheelchair (all males and females Children under 18-29) 5km'
+                                l2='Hand crank (all males age under 18 -29) 2.5km'
+                            />
+                            <CategoryCard
+                                h2='Open Division (Individuals) – Adolescents and Young Persons aged 18 - 35years (5km)'
+                                // h3='Adolescents and Young Persons aged 16 - 35years (5km)'
+                                l1='High School Students (all current high school students)'
+                                l2='College Students (all current college students)'
+                                l3="Youth Self-Employed/Entrepreneurs"
+                                l4="Youth out of school/NEET (Not in Education, Employment and Training)"
+                                // l5="Police or Military (all active duty or retired firemen, policemen or military personnel"
+                                // l6="Government Agency (all current or retired from same government agency)"
+                            />
+                            <CategoryCard
+                                h2='Corporate Division - Group / Team (5km)  '
+                                // h3='all employees from the same company/organisation (5km)'
+                                l1='All employees from the same company/organisation (18 – 35 years)'
+                                l2='Police or Military (all males and females 18 – 35 years)'
+                                l3="Government Agency ((all males and females 18 – 35 years)"
+                            />
+                            <CategoryCard
+                                h2='VVIP/VIP Division - Individual or Group'
+                                // h3='Individual or Group'
+                                l1='Sponsors/Representatives, '
+                                l2='Government Stakeholders'
+                                l3="Private Partners/Representatives"
+                                l4="Key community stakeholders."
+                                l5="Celebrities/High Profile Personalities"
+                            />
 
                         </div>
                     </div>
                 </div>
                 <div className="landing_price_category">
                     <div className="landing_price_price_container">
+                        <p className='landing_price_price_container_P'>The Ajegunle City Youth Marathon celebrates the resilience and determination of the ajegunle youth, and is a source of inspiration for the entire community</p>
                         <div className="landing_price_category_wrapper">
-                            <PriceWon icon='&#8358;' title='Join The Race' article='The  Marathon goes beyond a race. It is one way to get inspired.' bg='rgba(23, 183, 136, 1)' />
+                            <PriceWon icon='&#8358;' title='Join The Race' article='The  Marathon goes beyond a race. It is one way to get inspired.' bg='rgba(122, 144, 249, 1)' />
                             <PriceWon icon='&#8358;' title='N300k To Be Won' article='About 300,000 naira is available to be won by contestants.' bg='rgba(23, 183, 136, 1)' />
-                            <PriceWon icon={<IoTrophyOutline />} title='Amazing Prizes' article='Complementary prices are  up for grabs.' bg='rgba(23, 150, 183, 1)' />
-                            <PriceWon icon={<FitImage />} title='Stay Fit' article='As race day gets closer, you should also begin to fine-tune some aspects of your diet.' bg='rgba(52, 103, 245, 1)' />
+                            <PriceWon icon={<IoTrophyOutline />} title='Amazing Prizes' article='Complementary prices are  up for grabs.' bg='rgba(52, 199, 89, 1)' />
+                            <PriceWon icon={<FitImage />} title='Stay Fit' article='As race day gets closer, you should also begin to fine-tune some aspects of your diet.' bg='rgba(255, 45, 85, 1)' />
                         </div>
                     </div>
 
@@ -272,32 +308,31 @@ const LandingPage = () => {
 
                 </div>
                 <div className="landing_meet_sponsor">
-                    <h1 className='landing_meet_sponsor_h1'>Meet our and partners</h1>
+                    <h1 className='landing_meet_sponsor_h1'>Meet our Partners</h1>
                     <div className='SponsorsLogo'>
-                        
-                        <img src={sponsor1} alt="SOHAI" className='Sponsors-Logos'/>
+                        <img src={newSponsor1} alt="SOHAI" className='Sponsors-Logos' />
 
-                        <img src={sponsor3} alt="AJIF Sports Council" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor2} alt="NYCN-AJIF" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor4} alt=" KOBIS GLOBAL" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor5} alt="THE CURVE" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor6} alt=" KLICK Designs" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor7} alt=" Ajegunle Co-Working Hub" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor8} alt=" NYCN-IFELODUN" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor9} alt="MULA Integrated Concepts" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor10} alt="Heart To Give Initiative" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor11} alt="ANAYD" className='Sponsors-Logos'/>
-                        
-                        <img src={sponsor12} alt="smartpadi" className='Sponsors-Logos'/>
+                        <img src={newSponsor3} alt="AJIF Sports Council" className='Sponsors-Logos' />
+
+                        <img src={newSponsor2} alt="NYCN-AJIF" className='Sponsors-Logos' />
+
+                        <img src={newSponsor4} alt=" KOBIS GLOBAL" className='Sponsors-Logos' />
+
+                        <img src={newSponsor5} alt="THE CURVE" className='Sponsors-Logos' />
+
+                        <img src={newSponsor6} alt=" KLICK Designs" className='Sponsors-Logos' />
+
+                        <img src={newSponsor7} alt=" Ajegunle Co-Working Hub" className='Sponsors-Logos' />
+
+                        <img src={newSponsor8} alt=" NYCN-IFELODUN" className='Sponsors-Logos' />
+
+                        <img src={newSponsor9} alt="MULA Integrated Concepts" className='Sponsors-Logos' />
+
+                        <img src={newSponsor10} alt="Heart To Give Initiative" className='Sponsors-Logos' />
+
+                        <img src={newSponsor11} alt="ANAYD" className='Sponsors-Logos' />
+
+                        <img src={newSponsor12} alt="smartpadi" className='Sponsors-Logos' />
 
                     </div>
                 </div>

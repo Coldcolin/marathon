@@ -5,7 +5,7 @@ import './HeaderRes.css';
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoMdClose } from 'react-icons/io'
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/ajegunleCityMarathon.png'
+import logo from '../assets/newLogo.gif'
 
 
 const routes = [

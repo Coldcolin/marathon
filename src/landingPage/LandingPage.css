@@ -21,7 +21,8 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    gap: 4rem;
     margin: 50px 0px;
 }
 
@@ -87,6 +88,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
 }
 
 .landing_ready_wrapper_h1 {
@@ -95,7 +97,16 @@
     line-height: 72px;
     color: rgba(89, 84, 84, 1);
     margin-top: 40px;
-    margin-bottom: 40px;
+    text-align: center;
+    /* margin-bottom: 40px; */
+}
+
+.landing_ready_wrapper_P{
+    text-align: center;
+    font-weight: 700;
+    line-height: 33px;
+    font-size: 22px;
+    color: rgba(38, 38, 38, 0.8);
 }
 
 .landing_ready_wrapper_card_contain {
@@ -184,7 +195,7 @@
 
 .landing_category_card {
     width: 24%;
-    height: 85vh;
+    height: 70vh;
     background: #ffff;
     display: flex;
     flex-direction: column;
@@ -193,12 +204,13 @@
     border-radius: 10px;
     margin: 30px 0;
     gap: 20px;
+    padding: 0 10px;
 
 }
 
 
 .landing_category_card_currency_div {
-    width: 20%;
+    width: 25%;
     height: 7.8vh;
     background: rgba(217, 217, 217, 0.4);
     font-size: 24px;
@@ -206,7 +218,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(89, 84, 84, 1);
+    color: rgba(23, 183, 136, 1);
     margin-top: 20px;
 }
 
@@ -217,6 +229,7 @@
     line-height: 30px;
     font-weight: 700;
     width: 100%;
+    /* height: 4rem; */
 }
 
 .landing_category_card ul {
@@ -245,12 +258,23 @@
     width: 90%;
     height: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    gap: 4rem;
+}
+
+.landing_price_price_container_P{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    color: rgba(89, 84, 84, 1);
+    text-align: center;
 }
 
 .landing_price_category_wrapper {
     width: 90%;
-    height: 95%;
+    /* height: 80%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -258,7 +282,7 @@
 
 .landing_price_card {
     width: 20%;
-    height: 55%;
+    height: 33.5vh;
     border-radius: 10px;
     display: flex;
     align-items: center;
